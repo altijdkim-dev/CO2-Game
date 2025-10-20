@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <title>CO₂ Game - native Web Serial</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 18px; text-align:center; }
+    #topbar { margin-bottom: 8px; }
+    #connectBtn { padding:8px 12px; font-size:14px; margin-right:8px; }
+    #status { font-size:14px; color:#333; display:inline-block; vertical-align:middle; }
+    canvas { display:block; margin: 12px auto; border:1px solid #ccc; background:#fff; }
+    .actionBtn { padding:8px 12px; margin:6px; }
+  </style>
+</head>
+<body>
+  <h1>CO₂ Game (native Web Serial)</h1>
+
+  <div id="topbar">
+    <button id="connectBtn">🔌 Verbind met Arduino</button>
+    <span id="status">Status: niet verbonden</span>
+  </div>
+
+  <!-- p5 maakt het canvas -->
+  <!-- buttons komen from JS and are placed below canvas automatically -->
+  <script src="script.js"></script>
+</body>
+</html>
